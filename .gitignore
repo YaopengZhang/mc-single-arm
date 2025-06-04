@@ -1,6 +1,9 @@
 *.o
+*.co
+make_ntuple
+make_ntuple.d
+make_root_tree
 src/mc_single_arm
-#*
 *~
 *#
 
