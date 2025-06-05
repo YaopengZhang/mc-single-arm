@@ -1,5 +1,21 @@
 mc_single_arm
 ==============
+Update: June 05, 2025 by Yaopeng Zhang
+
+Use the following command to run the simulation:
+./run_mc_single_arm_tree <Name_of_the_infile> <Name_of_the_generator_file>
+<Name_of_the_infile>: the name of the input file under the folder "infiles" (without the ".inp" suffix)
+<Name_of_the_generator_file>: the name of the generator file under the folder "generated_events" (without the ".root" suffix)
+For example:
+./run_mc_single_arm_tree hms_LH2_KinC_x50_0_1 DVCSsim_gen_10M_x50_0_1_LH2
+
+I also added several macros:
+1. set_env.sh: You MUST execute "source set_env.sh" command before running the simulation
+2. Generate_Input_Files.py: You can use this script to generate all the input files according to the kinematics list. For example: "python3 Generate_Input_Files.py KinC_list.txt infiles"
+3. Merge_mc_files.C: Merge the simulation output root file with the generator file and also reconstruct the vertex_z variable
+    For example: root -l -b -q 'Merge_mc_files.C("DVCSsim_gen_10M_x50_0_1_LH2","hms_LH2_KinC_x50_0_1","hms_DVCSsim_gen_10M_x50_0_1_LH2")'
+
+==============
 Update: May 15, 2024
 
 Removed cernlib dependency for easier RHEL9/Alma9 compatibility.  Output is now fortran binary file.  Separate applications in "util" directory can make either ntuples or root trees. These applications must be compiled separately. Scripts in top directory will generate fortran binary file, run appropriate application to create ntuple/tree, and delete binary file (run_mc_single_arm_ntup and run_mc_single_arm_tree).
