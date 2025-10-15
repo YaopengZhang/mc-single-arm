@@ -1,5 +1,37 @@
 mc_single_arm
 ==============
+Update: October 15, 2025 by Yaopeng Zhang
+
+How to install and run the simulation
+1. Installation:
+git clone --branch NPS https://github.com/YaopengZhang/mc-single-arm.git
+cd mc-single-arm/
+cd src
+make
+cd ../util/
+cd ntuple/
+make
+cd ../root_tree/
+make
+cd ../..
+
+2. Set the correct environment(it’s crucial and needed every time when you open a new terminal):
+source set_env.sh
+
+3. Generate the input param files(some kinematic variables):
+python3 Generate_Input_Files.py KinC_list.txt infiles
+
+4. Link the input root file to the folder called “generated_events/”, for example:
+*** Make sure you use the absolute path for the root file or you can also just copy the root file to “generated_events/” ***
+ln -sf /volatile/hallc/nps/yaopeng/Simulation/DVCSsim_gen_10M_x50_0_1_LH2.root generated_events/
+
+5. Run the simulation: the first argument is the name of the input param file and the second argument is the name of the input root file (no “.inp” and “.root” included)
+./run_mc_single_arm_tree hms_LH2_KinC_x50_0_1 DVCSsim_gen_10M_x50_0_1_LH2
+
+6. Combine the output root file with the input root file (the first two arguments are the input name of the root file and the param file, the last argument is the name for the final combined root file):
+root -l -b -q 'Merge_mc_files.C("DVCSsim_gen_10M_x50_0_1_LH2","hms_LH2_KinC_x50_0_1","hms_DVCSsim_gen_10M_x50_0_1_LH2")'
+
+==============
 Update: June 05, 2025 by Yaopeng Zhang
 
 Use the following command to run the simulation:
