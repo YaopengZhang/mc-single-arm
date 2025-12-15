@@ -3,8 +3,8 @@
 ! NPS version - using pre-generated events
 !------------------------------------------------------------------------------
         1       Spectrometer (1=HMS, 2=SHMS, 3=..)
-     5253.0	Spectrometer momentum (in MeV/c)
-     16.919	Spectrometer angle (in degrees)
+     4726.0	Spectrometer momentum (in MeV/c)
+     16.748	Spectrometer angle (in degrees)
      0.0        Horiz beam spot size in cm (Full width of +/- 3 sigma)
      0.0        Vert  beam spot size in cm (Full width of +/- 3 sigma)
      10.0	Thickness of target (Full width, cm)
@@ -14,8 +14,8 @@
      0.0        Beam x offset (cm)  +x = beam left
      0.0	Beam y offset (cm)  +y = up
      0.0        Target z offset (cm)+z = downstream (0.25)
-     0.1258        Spectrometer x offset (cm) +x = down
-     0.0889        Spectrometer y offset (cm)
+     0.1266        Spectrometer x offset (cm) +x = down
+     0.0880        Spectrometer y offset (cm)
      0.0        Spectrometer z offset (cm)
      0.0        Spectrometer xp offset (mr)
      0.0        Spectrometer yp offset (mr)

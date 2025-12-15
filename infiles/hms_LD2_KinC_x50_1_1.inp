@@ -1,5 +1,5 @@
 !------------------------------------------------------------------------------
-! Input file for mc_single_arm 					06/05/2025
+! Input file for mc_single_arm 					12/15/2025
 ! NPS version - using pre-generated events
 !------------------------------------------------------------------------------
         1       Spectrometer (1=HMS, 2=SHMS, 3=..)
@@ -10,7 +10,7 @@
      10.0	Thickness of target (Full width, cm)
      0.0        Raster full-width x (cm)
      0.0        Raster full-width y (cm)
-     890.5	one radiation length of target material (in cm)
+     769.1	one radiation length of target material (in cm)
      0.0        Beam x offset (cm)  +x = beam left
      0.0	Beam y offset (cm)  +y = up
      0.0        Target z offset (cm)+z = downstream (0.25)

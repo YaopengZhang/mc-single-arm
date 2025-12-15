@@ -1,10 +1,10 @@
 !------------------------------------------------------------------------------
-! Input file for mc_single_arm 					06/05/2025
+! Input file for mc_single_arm 					12/15/2025
 ! NPS version - using pre-generated events
 !------------------------------------------------------------------------------
         1       Spectrometer (1=HMS, 2=SHMS, 3=..)
      4726.0	Spectrometer momentum (in MeV/c)
-     16.755	Spectrometer angle (in degrees)
+     16.748	Spectrometer angle (in degrees)
      0.0        Horiz beam spot size in cm (Full width of +/- 3 sigma)
      0.0        Vert  beam spot size in cm (Full width of +/- 3 sigma)
      10.0	Thickness of target (Full width, cm)

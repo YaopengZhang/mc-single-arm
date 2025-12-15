@@ -1,5 +1,5 @@
 !------------------------------------------------------------------------------
-! Input file for mc_single_arm 					06/05/2025
+! Input file for mc_single_arm 					12/15/2025
 ! NPS version - using pre-generated events
 !------------------------------------------------------------------------------
         1       Spectrometer (1=HMS, 2=SHMS, 3=..)
